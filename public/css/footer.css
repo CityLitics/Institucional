@@ -55,6 +55,9 @@ footer .terceiraColuna .mediasSociais {
     cursor: pointer;
     margin-top: 1vw;
 }
+footer .terceiraColuna img{
+    width: 10vw;
+}
 
 footer .terceiraColuna .mediasSociais .fa-envelope:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-phone:hover {
     color: #afacac;

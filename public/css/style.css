@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css");
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -15,9 +16,12 @@ body {
 header {
     height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
+    position: relative;
+
+
 }
 
 .menu {
@@ -33,6 +37,26 @@ header {
 }
 
 .menu a:hover {
+    transform: translateY(-2px);
+    transition: 0.4s ease-in-out;
+    color: #768859;
+}
+
+.loginCadastro {
+    position: absolute;
+    right: 3vw;
+    display: flex;
+    gap: 2vw;
+    font-size: 1.3vw;
+}
+
+.loginCadastro a {
+    text-decoration: none;
+    color: #111;
+    margin-top: 1vw;
+}
+
+.loginCadastro a:hover {
     transform: translateY(-2px);
     transition: 0.4s ease-in-out;
     color: #768859;
@@ -95,7 +119,7 @@ main {
     color: #666;
     width: 55%;
     margin: 3vw auto;
-    margin-bottom: 3vw;     
+    margin-bottom: 3vw;
 }
 
 .btn-saibamais {
