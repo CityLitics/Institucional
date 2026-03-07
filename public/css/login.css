@@ -72,10 +72,12 @@ main {
 }
 
 .tituloCampo {
-    color: #ffffff;
+    color: white;
     font-size: 2vw;
     font-weight: 800;
     margin-bottom: 0.3vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
 }
 
 .campoInput {
