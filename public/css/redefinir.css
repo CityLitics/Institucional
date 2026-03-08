@@ -29,7 +29,6 @@ header {
 
 .logoLogin img {
     width: 10vw;
-    margin-top: 1vw;
 }
 
 .menu {
@@ -51,22 +50,21 @@ header {
     color: #768859;
 }
 
-
 main {
     display: flex;
     flex: 1;
 }
 
-.section-login {
+.section-redefinir {
     display: flex;
     width: 50%;
     background-color: #768859;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0.6vw 0.6vw 0;
 }
 
-
-.form-login {
+.form-redefinir {
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +80,7 @@ main {
 
 .campoInput {
     width: 20vw;
-    height: 2vw;
+    height: 2.2vw;
     background-color: #d9d9d9;
     border-radius: 1vw;
     display: flex;
@@ -101,10 +99,11 @@ main {
     color: #7c7c7c;
 }
 
-.botaoLogin {
+
+.botaoRedefinir {
     justify-items: center;
-    width: auto;
-    height: 2vw;
+    width: 50%;
+    height: 2.8vw;
     border: none;
     border-radius: 1vw;
     background-color: #002b57;
@@ -113,32 +112,17 @@ main {
     font-size: 1vw;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 0.2vw;
+    margin-top: 3vw;
     margin-bottom: 0.4vw;
-
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.botaoLogin:hover {
+.botaoRedefinir:hover {
     box-shadow: 1px 1px 20px #494848;
     transition: 0.4s ease-in-out;
-}
-
-.cadastroTexto {
-    text-align: center;
-    color: #f2f2f2;
-    font-size: 1vw;
-}
-
-.cadastroTexto a {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.cadastroTexto .textoCadastro:hover {
-    transform: translateY(-0.15vw);
-    transition: 0.4s ease-in-out;
-    color: black;
 }
 
 .RedefinirTexto {
@@ -168,6 +152,15 @@ main {
 
 .bannerLogo img {
     width: 35vw;
+}
+
+#msgCorretoNome, #msgCorretoEmail, #msgCorretoCnpj, #msgCorretoSenha {
+    color: #c11616;
+    font-size: 0.6;
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+    margin-top: -0.5vw;
 }
 
 footer {
