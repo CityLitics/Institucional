@@ -29,6 +29,15 @@ function validarCampos (input, msg, tamanho) {
         } else {
             msg.style.color = "#90EE90";
             msg.textContent = "Campo preenchido com sucesso!";
+
+            setTimeout(() => {
+                msg.style.opacity = "0";
+            }, 2500);
+
+            setTimeout(() => {
+                msg.style.opacity = "1";
+                msg.textContent = "";
+            }, 3000);
         }
     })
 }

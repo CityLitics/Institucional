@@ -181,11 +181,3 @@ main {
 .botaoContato:hover {
     background-color: #001e3d;
 }
-
-footer {
-    height: 4vw;
-    display: flex;
-    align-items: center;
-    padding: 0 2vw;
-    background-color: #002645;
-}
