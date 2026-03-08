@@ -89,6 +89,7 @@ main {
     align-items: center;
     padding: 0 0.6vw;
     margin-bottom: 0.8vw;
+    box-shadow: 1px 1px 10px #494848;
 }
 
 .campoInput input {
@@ -178,10 +179,17 @@ main {
     font-size: 1vw;
     cursor: pointer;
     width: 30px;
+    color: #e0dddd;
 }
 
 #olhoFechado {
     display: none;
+}
+
+#msgCorretoEmail {
+    color: #90EE90;
+    font-size: 1vw;
+    margin-top: 0vw;
 }
 
 @media screen and (max-width: 480px) {

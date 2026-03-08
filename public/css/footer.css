@@ -46,21 +46,12 @@ footer .segundaColuna .telefoneCelular, .email, .faq {
     gap: 1vw;
 }
 
-footer .terceiraColuna .mediasSociais {
-    font-size: 2vw;
+footer .terceiraColuna {
     display: flex;
-    flex-direction: row;
-    gap: 2vw;
     justify-content: center;
-    cursor: pointer;
-    margin-top: 1vw;
-}
-footer .terceiraColuna img{
-    width: 10vw;
+    align-items: center;
 }
 
-footer .terceiraColuna .mediasSociais .fa-envelope:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-phone:hover {
-    color: #afacac;
-    transform: translateY(-3px);
-    transition: 0.4s ease-in-out;
+footer .terceiraColuna img{
+    width: 10vw;
 }

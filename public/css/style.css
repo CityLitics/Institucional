@@ -154,10 +154,9 @@ main {
 }
 
 .texto-secao {
-    font-size: 1.8vh;
-    width: 65vh;
+    font-size: 1.4vw;
+    width: 60%;
     margin: 0 auto 5vh auto;
-    line-height: 2.6vh;
     color: #333;
 }
 

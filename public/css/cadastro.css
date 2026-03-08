@@ -280,6 +280,7 @@ main {
 
     #olhoAberto, #olhoFechado {
         font-size: 3vw;
+        color: #000000;
     }
 
     #msgCorretoNome,
