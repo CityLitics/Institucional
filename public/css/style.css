@@ -20,8 +20,6 @@ header {
     justify-content: center;
     width: 100%;
     position: relative;
-
-
 }
 
 .menu {
@@ -149,25 +147,54 @@ main {
 .section2 {
     text-align: center;
     margin-bottom: 10vh;
-    margin-top: 10vh;
+    margin-top: 10vw;
 }
 
 .titulo-secao {
-    font-size: 3vh;
+    font-size: 3vw;
     font-weight: bold;
     color: #0A1F44;
     margin-bottom: 2vh;
 }
 
+.sobre {
+    height: 20vw;
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
 .texto-secao {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     width: 60%;
     margin: 0 auto 5vh auto;
     color: #333;
 }
 
+.servico {
+    background-color: #0A1F44;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 5vh;
+}
+
+.servico h2 {
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+.servico p {
+    color: #ffffff;
+    font-size: 1.6vw;
+    width: 70%;
+}
+
 .titulo-secao-membros {
-    font-size: 3vh;
+    font-size: 2vw;
     font-weight: bold;
     color: #6E8757;
     margin-bottom: 4vh;
@@ -178,6 +205,7 @@ main {
     grid-template-columns: repeat(3, 0.2fr);
     gap: 4vh;
     justify-content: center;
+    font-size: 1.5vw;
 }
 
 .membro {
@@ -189,8 +217,8 @@ main {
 }
 
 .foto-membro {
-    height: 11.5vh;
-    width: 12vh;
+    height: 13vh;
+    width: 14vh;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
