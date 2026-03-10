@@ -94,7 +94,7 @@ main {
     background: transparent;
     font-family: "Poppins", sans-serif;
     font-size: 1vw;
-    color: #7c7c7c;
+    color: #111111;
 }
 
 
@@ -197,6 +197,11 @@ main {
 
 #fecharMenu {
     display: none;
+}
+
+.msgCorreto {
+    font-size: 1vw;
+    color: #90ee90;
 }
 
 @media (max-width: 480px) {
