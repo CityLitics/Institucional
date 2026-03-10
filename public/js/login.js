@@ -4,6 +4,7 @@ const senha = document.querySelector("#senha");
 const email = document.querySelector("#email");
 
 let senhaSalva = sessionStorage.getItem("senha");
+let emailSalvo = sessionStorage.getItem("email");
 
 olhoAberto.addEventListener("click", () => {
     senha.type = "text";

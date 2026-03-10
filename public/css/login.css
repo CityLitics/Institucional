@@ -137,25 +137,25 @@ main {
 }
 
 .cadastroTexto a {
-    color: white;
+    color: #f1f1f1;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .cadastroTexto .textoCadastro:hover {
     transform: translateY(-0.15vw);
     transition: 0.4s ease-in-out;
-    color: black;
+    color: #111111;
 }
 
 .RedefinirTexto {
     text-align: center;
-    color: #f2f2f2;
+    color: #f1f1f1;
     font-size: 1vw;
 }
 
 .RedefinirTexto a {
-    color: white;
+    color: #f1f1f1;
     text-decoration: none;
     font-weight: 700;
 }
@@ -163,7 +163,7 @@ main {
 .RedefinirTexto .textoRedifinir:hover {
     transform: translateY(-0.15vw);
     transition: 0.4s ease-in-out;
-    color: black;
+    color: #111111;
 }
 
 .bannerLogo {
@@ -181,7 +181,7 @@ main {
     font-size: 1vw;
     cursor: pointer;
     width: 30px;
-    color: #e0dddd;
+    color: #f1f1f1;
 }
 
 #olhoFechado {
@@ -343,6 +343,11 @@ main {
     }
 
     #olhoAberto, #olhoFechado {
+        font-size: 3vw;
+    }
+
+    #msgCorretoEmail, 
+    #msgCorretoSenha {
         font-size: 3vw;
     }
 }
