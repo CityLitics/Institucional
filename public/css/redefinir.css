@@ -58,10 +58,10 @@ main {
 .section-redefinir {
     display: flex;
     width: 50%;
-    background-color: #768859;
+    background-color: #023966;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0.6vw 0.6vw 0;
+    
 }
 
 .form-redefinir {
@@ -104,13 +104,13 @@ main {
     height: 2.8vw;
     border: none;
     border-radius: 1vw;
-    background-color: #002b57;
-    color: white;
+    background-color: #f1f1f1;
+    color: #111111;
     font-family: "Poppins", sans-serif;
     font-size: 1vw;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 3vw;
+    margin-top: 3vw; 
     margin-bottom: 0.4vw;
     display: flex;
     align-self: center;

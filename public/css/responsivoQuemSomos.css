@@ -10,7 +10,7 @@
     .menu {
         gap: 6vw;
         font-size: 3.8vw;
-        justify-content: center;
+        justify-content: center; 
     }
 
     .menu a {

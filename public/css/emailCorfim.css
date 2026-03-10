@@ -55,33 +55,32 @@ main {
     flex: 1;
 }
 
-.section-cadastro {
+.section-redefinir {
     display: flex;
     width: 50%;
     background-color: #023966;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0.6vw 0.6vw 0;
+
 }
 
-.form-cadastro {
+.form-redefinir {
     display: flex;
     flex-direction: column;
 }
 
 .tituloCampo {
-    color: #ffffff;
-    font-size: 1.6vw;
+    color: white;
+    font-size: 2vw;
     font-weight: 800;
     margin-bottom: 0.3vw;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .campoInput {
-    width: 30vw;
+    width: 25vw;
     height: 3vw;
     background-color: #d9d9d9;
-    border-radius: 0.7vw;
+    border-radius: 1vw;
     display: flex;
     align-items: center;
     padding: 0 0.6vw;
@@ -95,36 +94,18 @@ main {
     background: transparent;
     font-family: "Poppins", sans-serif;
     font-size: 1vw;
-    color: #000000;
-    margin-left: 1vw;
+    color: #7c7c7c;
 }
 
-#gerarSenha {
-    width: 80%;
-    height: 80%;
-    border: none;
-    outline: none;
-    background: #002645;
-    font-family: "Poppins", sans-serif;
-    font-size: 1vw;
-    color: #ffffff;
-    border-radius: 0.7vw;
-    cursor: pointer;
-}
 
-#gerarSenha:hover {
-    transition: 0.4s ease-in-out;
-    color: #768859;
-}
-
-.botaoCadastro {
+.botaoRedefinir {
     justify-items: center;
     width: 50%;
     height: 2.8vw;
     border: none;
     border-radius: 1vw;
     background-color: #f1f1f1;
-    color: #000000;
+    color: #111111;
     font-family: "Poppins", sans-serif;
     font-size: 1vw;
     font-weight: 700;
@@ -135,26 +116,35 @@ main {
     align-self: center;
     align-items: center;
     justify-content: center;
+    font-size: 1.5vw;
 }
 
-.botaoCadastro:hover {
+.botaoEnviar a {
+    display: flex;
+    text-decoration: none;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoRedefinir:hover {
     box-shadow: 1px 1px 20px #494848;
     transition: 0.4s ease-in-out;
 }
 
-.cadastroTexto {
+.RedefinirTexto {
     text-align: center;
     color: #f2f2f2;
     font-size: 1vw;
 }
 
-.cadastroTexto a {
+.RedefinirTexto a {
     color: white;
     text-decoration: none;
     font-weight: 700;
 }
 
-.cadastroTexto .textoLogin:hover {
+.RedefinirTexto .textoRedifinir:hover {
     transform: translateY(-0.15vw);
     transition: 0.4s ease-in-out;
     color: black;
@@ -183,111 +173,94 @@ main {
     margin-top: -0.5vw;
 }
 
-@media screen and (max-width: 480px) {
-
+@media (max-width: 480px) {
     header {
         height: 80px;
-        text-align: center;
-    }
-
-    .menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 10vw
-    }
-
-    .menu a {
-        font-size: 4vw;
-    }
-
-    .form-cadastro {
-        gap: 3vw;
-        margin-top: 8vw;
-    }
-
-    .tituloCampo {
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-    }
-
-    .bannerLogo {
-        display: none;
-    }
-
-    .section-cadastro {
-        width: 100%;
-        background-color: #ffffff;
-    }
-
-    img {
-        display: none;
-    }
-
-    .logoLogin {
-        display: block;
-        position: absolute;
-        top: 50vw;
-        left: 24vw;
+        padding: 0 4vw;
     }
 
     .logoLogin img {
-        display: block;
-        width: 50vw;
+        width: 28vw;
+    }
+
+    .menu {
+        gap: 4vw;
+        font-size: 3.2vw;
+    }
+
+    main {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-redefinir {
+        width: 100%;
+        padding: 10vw 0;
+        border-radius: 0 0 3vw 3vw;
+        order: 1;
+        background-color: #ffffff;
     }
 
     .tituloCampo {
-        font-size: 4vw;
+        font-size: 5.5vw;
+        margin-bottom: 1.5vw;
+        color: #002b57;
     }
 
     .campoInput {
-        width: 80vw;
-        height: 8vw;
-        border-radius: 2vw;
+        width: 72vw;
+        height: 11vw;
+        border-radius: 3vw;
+        padding: 0 3vw;
+        margin-bottom: 3vw;
     }
 
     .campoInput input {
-        font-size: 3vw;
-        margin-left: 2vw;
+        font-size: 3.8vw;
     }
 
-    .botaoLogin {
-        width: 80vw;
-        height: 6vw;
-        font-size: 3vw;
-    }
-
-    .cadastroTexto {
-        font-size: 3vw;
+    .botaoRedefinir {
+        width: 55%;
+        height: 11vw;
+        border-radius: 3vw;
+        font-size: 3.8vw;
+        margin-top: 6vw;
+        margin-bottom: 2vw;
     }
 
     .RedefinirTexto {
-        font-size: 3vw;
+        font-size: 3.2vw;
     }
 
-    #gerarSenha {
-        font-size: 3vw;
-        border-radius: 2vw;
+    .bannerLogo {
+        width: 100%;
+        padding: 8vw 0;
+        order: 0;
     }
 
-    .botaoCadastro {
+    .bannerLogo img {
         width: 60vw;
-        height: 7vw;
-        font-size: 3vw;
-        border-radius: 2vw;
-    }
-
-    #olhoAberto, #olhoFechado {
-        font-size: 3vw;
-        color: #000000;
     }
 
     #msgCorretoNome,
     #msgCorretoEmail,
     #msgCorretoCnpj,
     #msgCorretoSenha {
-        font-size: 3vw;
+        font-size: 2.8vw;
+        margin-left: 3vw;
+        margin-top: -1.5vw;
+    }
+
+    footer {
+        height: 80px;
+        font-size: 3.2vw;
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5vw;
+        background-color: #002645;
     }
 }

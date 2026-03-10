@@ -7,14 +7,14 @@ body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: white;
+    background: #f1f1f1;
     color: #111;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ header {
 }
 
 .menu a {
-    color: #111;
+    color: #111111;
     text-decoration: none;
     margin-top: 1vw;
 }
@@ -50,7 +50,7 @@ header {
 
 .loginCadastro a {
     text-decoration: none;
-    color: #111;
+    color: #111111;
     margin-top: 1vw;
 }
 
@@ -73,7 +73,7 @@ main {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    color: #6E8757;
+    color: #111111;
 }
 
 .texto-principal {
@@ -81,6 +81,7 @@ main {
     font-size: 3vw;
     width: 60%;
     margin-top: 5vw;
+    color: #111111;
 }
 
 #cor-diferente-verde {
@@ -115,7 +116,7 @@ main {
 
 .descricao {
     font-size: 2.1vw;
-    color: #666;
+    color: #666666;
     width: 55%;
     margin: 3vw auto;
     margin-bottom: 3vw;
@@ -125,7 +126,7 @@ main {
     height: 3vw;
     width: 11vw;
     background: #0A1F44;
-    color: #ffffff;
+    color: #f1f1f1;
     border: none;
     border-radius: 0.8vh;
     font-size: 1.2vw;
@@ -169,7 +170,7 @@ main {
     font-size: 1.6vw;
     width: 60%;
     margin: 0 auto 5vh auto;
-    color: #333;
+    color: #333333;
 }
 
 .servico {
@@ -184,12 +185,12 @@ main {
 }
 
 .servico h2 {
-    color: #ffffff;
+    color: #f1f1f1;
     font-size: 3vw;
 }
 
 .servico p {
-    color: #ffffff;
+    color: #f1f1f1;
     font-size: 1.6vw;
     width: 70%;
 }

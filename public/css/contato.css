@@ -58,7 +58,7 @@ main {
 .section-contato {
     display: flex;
     width: 100%;
-    background-color: #768859;
+    background-color: #023966;
     justify-content: center;
     align-items: center;
 }
@@ -135,7 +135,7 @@ main {
     background-color: white;
     border-radius: 0.6vw;
     border: 0.1vw solid #d9d9d9;
-    padding: 1vw
+    padding: 1vw;
     transition: 0.3s;
 }
 
@@ -165,20 +165,26 @@ main {
 
 
 .botaoContato {
+    display: flex;
     height: 3vw;
+    width: 10vw;
     border: none;
     border-radius: 0.6vw;
-    background-color: #002b57;
-    color: white;
+    background-color: #f1f1f1;
+    color: black;
     font-family: "Poppins", sans-serif;
     font-size: 1.2vw;
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
 }
 
 .botaoContato:hover {
-    background-color: #001e3d;
+    box-shadow: 1px 1px 20px #494848;
+    transition: 0.4s ease-in-out;
 }
 
 #msgCorretoNome, #msgCorretoEmail, #msgCorretoMensagem {
