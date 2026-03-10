@@ -50,6 +50,7 @@ header {
     color: #768859;
 }
 
+
 main {
     display: flex;
     flex: 1;
@@ -279,7 +280,8 @@ main {
         border-radius: 2vw;
     }
 
-    #olhoAberto, #olhoFechado {
+    #olhoAberto,
+    #olhoFechado {
         font-size: 3vw;
         color: #000000;
     }

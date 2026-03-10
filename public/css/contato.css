@@ -49,6 +49,10 @@ header {
     transition: 0.4s ease-in-out;
     color: #768859;
 }
+nav a.ativo {
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
 
 main {
     display: flex;

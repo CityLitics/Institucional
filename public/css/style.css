@@ -40,6 +40,11 @@ header {
     color: #768859;
 }
 
+nav a.ativo {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
 .loginCadastro {
     position: absolute;
     right: 3vw;
