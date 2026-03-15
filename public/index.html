@@ -22,7 +22,11 @@
 
 <body>
   <header>
-    <img id="logo" src="logos/Logo_EasyData_V02.png" alt="" srcset="">
+    <div class="logo">
+      <img src="img/logodata.png" alt="logo" style="display: block; height: 60px; width: auto;">
+      <img class="logo-mobile" src="logos/Logo_EasyData_V02.png" alt="logo">
+
+    </div>
     <button class="menu-hamburguer" id="menuBtn" aria-label="Abrir menu">
       <span></span>
       <span></span>
@@ -30,40 +34,141 @@
     </button>
     <nav class="menu" id="menuNav">
       <button id="fecharMenu">✕</button>
-      <a class="ativo" href="index.html"><b>Início</b></a>
-      <a href="quemSomos.html"><b>Quem Somos</b></a>
-      <a href="contato.html"><b>Contato</b></a>
+      <a href="#inicio">Início</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servico">Serviços</a>
+      <a href="contato.html">Contato</a>
       <a id="login" href="login.html"><b>Login</b></a>
     </nav>
 
     <div class="loginCadastro">
       <a href="login.html"><b>Login</b></a>
     </div>
-
   </header>
+
   <main>
     <section class="section1">
-
       <h1 class="texto-principal">
-        <span id="cor-diferente-azul">Análise de dados urbanos</span> que geram <span id="cor-diferente-verde">melhores
-          decisões</span> de negócio
+        <b><span id="cor-diferente-azul">Transformamos <span id="cor-diferente-roxo">dados urbanos</span> em
+            <span id="cor-diferente-verde">decisões estratégicas</span> para o mercado imobiliário.</b>
       </h1>
 
       <div class="imagem-predios">
-        <img src="img/buildings.png" alt="">
+        <img src="./img/banner2.jpg" alt="">
       </div>
 
       <div class="container">
 
       </div>
-
       <p class="descricao">
-        Entregamos métricas e rankings que auxiliam em decisões de investimento imobiliário.
-      </p>
+        <b id="cor-diferente-azul">Fornecemos métricas e rankings baseados em dados</span>
+          que impulsionam <b id="cor-diferente-verde">decisões mais seguras no investimento imobiliário</span>. </p>
+
 
       <a href="contato.html">
         <button class="btn-saibamais">Entre em contato</button>
       </a>
+
+    </section>
+
+    <!-- Seção Sobre adicionada -->
+    <section id="quem-somos" class="section2">
+      <div class="quem-somos-wrapper">
+        <div class="container2">
+          <div class="sobre">
+            <h2 class="titulo-secao"> <b>Quem Somos</b></h2>
+            <p class="texto-secao">
+              A Citylitics é um projeto voltado à análise de dados urbanos, com o saneamento básico e seu impacto no
+              mercado
+              imobiliário. Nosso objetivo é transformar dados públicos em informações claras que ajudem empresas do
+              setor
+              imobiliário a entender melhor o potencial de desenvolvimento das cidades.
+            </p>
+          </div>
+        </div>
+       
+      </div>
+
+
+      <section id="servico">
+        <div class="servico">
+          <h2 class="titulo-secao"><b>Serviços:</b></h2>
+
+          <div class="servico-cards">
+            <div class="servico-card">
+              <h3>Organização de Dados</h3>
+              <div class="icone1">
+                <img src="./img/icone1.png" alt="">
+              </div>
+              <p>Transformamos dados públicos em métricas claras para o setor imobiliário.</p>
+            </div>
+
+            <div class="servico-card">
+              <h3>Rankings de Cidades</h3>
+              <div class="icone2">
+                <img src="./img/icone2.png" alt="">
+              </div>
+              <p>Comparações e rankings entre cidades indicando potencial de valorização.</p>
+            </div>
+            <div class="servico-card">
+              <h3>Infraestrutura Urbana</h3>
+              <div class="icone3">
+                <img src="./img/icone3.png" alt="">
+              </div>
+              <p>Avaliação de níveis de saneamento básico e risco para investimentos.</p>
+            </div>
+           
+          </div>
+           <p class="texto-secao">
+        Oferecemos um serviço de análise e organização de dados de saneamento básico para decisões de investimentos
+        imobiliários. A partir de bases públicas, geramos métricas, comparações e rankings entre cidades e regiões,
+        indicando níveis de infraestrutura urbana, risco e potencial de valorização.
+      </p>
+      </section>
+
+      
+      </div>
+
+
+      <h2 class="titulo-secao-membros">MEMBROS</h2>
+
+      <div class="membros">
+        <div class="membro">
+          <div class="foto-membro"><a href="https://www.linkedin.com/in/andrelc-santos/"><img
+                src="img/AndreSantos_Moodle.png"></a></div>
+          <p class="nome-membro">Andre</p>
+        </div>
+
+        <div class="membro">
+          <div class="foto-membro"><a
+              href="https://www.linkedin.com/in/claudiana-dos-santos-537321102?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                src="img/Claudiana.jpg"></a></div>
+          <p class="nome-membro">Claudiana</p>
+        </div>
+
+        <div class="membro">
+          <div class="foto-membro"><a href="https://www.linkedin.com/in/gabrieladryan/"><img src="img/Adryan.jpg"></a>
+          </div>
+          <p class="nome-membro">Gabriel</p>
+        </div>
+
+        <div class="membro">
+          <div class="foto-membro"><a href="https://www.linkedin.com/in/rafael-calderon-1b0260286/"><img
+                src="img/rafael.jpg"></a></div>
+          <p class="nome-membro">Rafael</p>
+        </div>
+
+        <div class="membro">
+          <div class="foto-membro"><a href="https://www.linkedin.com/in/giovana-querobino-branquinho-8824a01a3/"><img
+                src="img/giovanna.jpg"></a></div>
+          <p class="nome-membro">Giovana</p>
+        </div>
+
+        <div class="membro">
+          <div class="foto-membro"><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-gomes-de-melo-184794387/"><img
+                src="img/jotta.jpg"></a></div>
+          <p class="nome-membro">João</p>
+        </div>
     </section>
   </main>
 
@@ -99,4 +204,5 @@
   </footer>
   <script src="js/menu.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+
+}
 
 html,
 body {
@@ -6,44 +11,60 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f1f1f1;
-    color: #111;
-    display: flex;
+    background: radial-gradient(#65b5fb 1%, #c9dff2 49%, #ffffff 96%);
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: scroll;    
+    overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
+    display: none;
 }
 
 header {
-    height: 80px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     position: relative;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 4vw;
+
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    position: absolute;
+    left: 1vw;
+    align-items: center;
+    top: 2px;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
 }
 
 .menu {
     display: flex;
-    gap: 3vw;
+    gap: 5vw;
     font-size: 1.3vw;
 }
 
 .menu a {
-    color: #111111;
+    color: #0D1B3E;
     text-decoration: none;
-    margin-top: 1vw;
+    margin-top: 1.5vw;
+    font-size: 1.9vw;
 }
 
 .menu a:hover {
     transform: translateY(-2px);
     transition: 0.4s ease-in-out;
-    color: #768859;
+    color: #4CAF7D;
 }
 
 nav a.ativo {
@@ -57,19 +78,27 @@ nav a.ativo {
     display: flex;
     gap: 2vw;
     font-size: 1.3vw;
+    align-items: center;
 }
 
 .loginCadastro a {
     text-decoration: none;
-    color: #111111;
-    margin-top: 1vw;
+    background-color: #4CAF7D;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-color: #ffffff;
 }
 
 .loginCadastro a:hover {
-    transform: translateY(-2px);
+    background-color: #4CAF7D;
+    color: #ffffff;
     transition: 0.4s ease-in-out;
-    color: #768859;
 }
+
+
 
 main {
     display: flex;
@@ -96,11 +125,13 @@ main {
 }
 
 #cor-diferente-verde {
-    color: #768859;
+    font-family: 'DM Sans', sans-serif;
+    color: #006b4b;
 }
 
 #cor-diferente-azul {
-    color: #0f326e;
+    font-family: 'DM Sans', sans-serif;
+    color: #0D1B3E;
 }
 
 .imagem-predios {
@@ -120,23 +151,23 @@ main {
 .container {
     width: 62.5vw;
     height: 23.02vw;
-    background-color: #768859;
+    background-color: #0D1B3E;
     border-radius: 2vw;
     margin-top: 15vw;
 }
 
 .descricao {
     font-size: 2.1vw;
-    color: #666666;
+    color: #000000;
     width: 55%;
     margin: 3vw auto;
     margin-bottom: 3vw;
 }
 
 .btn-saibamais {
-    height: 3vw;
-    width: 11vw;
-    background: #0A1F44;
+    height: 5vw;
+    width: 13vw;
+    background: #4CAF7D;
     color: #f1f1f1;
     border: none;
     border-radius: 0.8vh;
@@ -148,7 +179,7 @@ main {
 .btn-saibamais:hover {
     color: #eaeae6;
     transition: 0.3s ease-in-out;
-    box-shadow: 1px 1px 10px #666;
+    box-shadow: 1px 1px 10px #4aff71;
 }
 
 .btn-saibamais:active {
@@ -166,33 +197,36 @@ main {
 .titulo-secao {
     font-size: 3vw;
     font-weight: bold;
-    color: #0A1F44;
+    color: #0D1B3E;
     margin-bottom: 2vh;
 }
 
 .sobre {
-    height: 20vw;
     gap: 2vw;
     display: flex;
     flex-direction: column;
+    min-height: 20vw;
 }
 
+
 .texto-secao {
-    font-size: 1.6vw;
-    width: 60%;
+    width: 100%;
     margin: 0 auto 5vh auto;
-    color: #333333;
+    color: #000000;
+    font-size: 4vw;
+    line-height: 1.5;
 }
 
 .servico {
-    background-color: #0A1F44;
-    height: 30vw;
+    background-color: #0D1B3E;
+    height: 54vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2vw;
     margin-bottom: 5vh;
+    margin-top: 5vw;
 }
 
 .servico h2 {
@@ -201,15 +235,15 @@ main {
 }
 
 .servico p {
-    color: #f1f1f1;
-    font-size: 1.6vw;
-    width: 70%;
+    font-family: 'DM Sans', sans-serif;
+    color: aliceblue;
+    font-size: 26px;
 }
 
 .titulo-secao-membros {
     font-size: 2vw;
     font-weight: bold;
-    color: #6E8757;
+    color: #007e3f;
     margin-bottom: 4vh;
 }
 
@@ -252,39 +286,135 @@ main {
 }
 
 .menu-hamburguer {
-  display: none;
+    display: none;
 }
 
 .menu-hamburguer {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5px;
-  width: 28px;
-  height: 20px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .menu-hamburguer span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #f1f1f1;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
 #login {
     display: none;
 }
 
-#logo {
+
+
+#fecharMenu {
     display: none;
 }
 
-#fecharMenu {
- display: none;
+.quem-somos-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+    margin-top: -5vw;
+    font-size: 15px;
+}
+
+.quem-somos-wrapper p {
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.quem-somos-wrapper p {
+    font-size: 1.4rem;
+}
+
+.container2 {
+    background-color: #c8efff;
+    border: 1px solid #68fab6;
+    border-radius: 2vw;
+    padding: 3vw 4vw;
+    width: 55%;
+    margin: 0;
+    border-radius: #001538;
+}
+
+.imagem-logo img {
+    height: 120px;
+    width: auto;
+}
+
+.servico-cards {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    width: 90%;
+    height: 63%;
+}
+
+.servico-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(255, 255, 255, 0.12);
+}
+
+.servico-card {
+    background-color: #4CAF7D;
+    border-radius: 1.5vw;
+    padding: 2vw;
+    flex: 1;
+    color: #0D1B3E;
+
+}
+
+.servico-card h3 {
+    font-size: 2.1vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+
+}
+
+.servico-card p {
+    font-size: 2vw;
+    width: 100%;
+    color: #ffffff;
+}
+
+.logo .logo-mobile {
+    display: none;
+}
+
+.icone1 img,
+.icone2 img,
+.icone3 img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.foto-membro {
+    height: 13vh;
+    width: 13vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-membro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

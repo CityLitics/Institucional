@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+      background: radial-gradient(#65b5fb 1%, #c9dff2 49%, #ffffff 96%);
 }
 
 header {
@@ -56,25 +57,42 @@ nav a.ativo {
 }
 
 main {
-    display: flex;
-    flex: 1;
+   display:flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+}
+.container1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+
 }
 
+.form-contato{
+    background-color: #002645;
+  
+    width:420px;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+     display: flex;
+    flex-direction: column;
+    width: 36vw;
+    gap: 2vw;
+  
+}
 .section-contato {
+     background: radial-gradient(#65b5fb 1%, #c9dff2 49%, #ffffff 96%);
     display: flex;
     width: 100%;
-    background-color: #023966;
     justify-content: center;
     align-items: center;
 }
 
 
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    width: 36vw;
-    gap: 2vw;
-}
+
 
 .tituloContato {
     color: white;

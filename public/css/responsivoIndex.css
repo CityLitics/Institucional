@@ -6,12 +6,42 @@
     }
 
     header {
-        height: 80px;
+
         font-size: 5vw;
         width: 100%;
         background-color: #002645;
         justify-content: space-between;
+        position: relative;
+        height: 150px !important;
+        height: 70px !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+        display: flex !important;
+        display: flex !important;
+        align-items: center;
     }
+
+    .imagem-logo {
+        display: none;
+    }
+
+    .logo img:not(.logo-mobile) {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: block !important;
+        width: 100px !important;
+        height: 50px !important;
+        background-color: red !important;
+        position: absolute !important;
+        right: 3vw !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 999 !important;
+    }
+
+
 
     .menu {
         display: none;
@@ -23,48 +53,62 @@
 
     .loginCadastro {
         display: none;
-    }   
+    }
 
     main {
-        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
     .section1 {
         gap: 6vw;
+        width: 100%;
     }
 
     .texto-principal {
-        font-size: 5vw;
-        width: 85%; 
+        font-size: 6vw;
+        width: 85%;
+        margin-top: 8vw;
     }
 
-    .container {
-        width: 80%;
-        height: 25vw;
+    .imagem-predios {
+        position: relative;
+        width: 100%;
+        height: 70vw;
     }
 
     .imagem-predios img {
-        width: 70vw;
-        height: 30vw;
-        left: -35vw;
-        top: 11vw;
+        position: absolute;
+        width: 80vw;
+        height: 52vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        border-radius: 3vw;
+        z-index: 2;
+    }
+
+    .container {
+        width: 85%;
+        height: 35vw;
+        margin-top: -53vw;
+        border-radius: 4vw;
+        position: relative;
+        border-radius: 4vw;
     }
 
     .descricao {
-        font-size: 3.5vw;
-        width: 90%;
+        font-size: 4vw;
+        width: 85%;
     }
 
     .btn-saibamais {
-        height: 9vw;
-        width: 27vw;
-        font-size: 3vw;
-        padding: 3vw;
+        height: 10vw;
+        width: 35vw;
+        font-size: 3.5vw;
+        padding: 2vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,14 +116,6 @@
 
     nav a.ativo {
         border-bottom: 1px solid #f1f1f1;
-    }
-
-    footer {
-        height: 120px;
-    }
-
-    .coluna span {
-        font-size: 2vw;
     }
 
     .menu-hamburguer {
@@ -100,7 +136,6 @@
         height: 100vh;
         background-color: #002645;
         z-index: 99;
-        position: fixed;
     }
 
     .menu.aberto a {
@@ -121,19 +156,117 @@
         display: block;
         background: none;
         border: none;
-        font-size: 5vw;
+        font-size: 6vw;
         color: #f1f1f1;
         position: absolute;
         top: 4vw;
         right: 5vw;
     }
 
-    #logo {
-        display: block;
-        width: 30%;
+  
+    .section2 {
+        width: 100%;
+        margin-top: 8vw;
+        margin-bottom: 5vw;
     }
 
-    #logo {
-        margin-left: 5vw;
+    .sobre {
+        height: auto;
     }
-} 
+
+    .quem-somos-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        gap: 5vw;
+        padding: 0 5vw;
+    }
+
+    .container2 {
+        width: 85%;
+        padding: 6vw;
+        margin: 0;
+        border-radius: 4vw;
+    }
+
+    .titulo-secao {
+        font-size: 7vw;
+    }
+
+    .texto-secao {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .logo img {
+        display: none !important;
+    }
+
+    .imagem-logo img {
+        display: none;
+    }
+
+    /* SERVIÇO */
+    .servico {
+        height: auto;
+        padding: 8vw 5vw;
+        margin-top: 5vw;
+    }
+
+    .servico h2 {
+        font-size: 6vw;
+    }
+
+    .servico p {
+        font-size: 4vw;
+        width: 90%;
+    }
+
+    .servico-cards {
+        flex-direction: column;
+        width: 90%;
+        gap: 4vw;
+    }
+
+    .servico-card {
+        border-radius: 3vw;
+        padding: 4vw;
+    }
+
+    .servico-card h3 {
+        font-size: 4.5vw;
+    }
+
+    .servico-card p {
+        font-size: 3.5vw;
+        width: 100%;
+    }
+
+    .servico-card svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* MEMBROS */
+    .titulo-secao-membros {
+        font-size: 6vw;
+        margin-top: 6vw;
+    }
+
+    .membros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vw;
+        font-size: 3.5vw;
+        padding: 0 5vw;
+    }
+
+    /* FOOTER */
+    footer {
+        height: auto;
+        padding: 5vw;
+    }
+
+    .coluna span {
+        font-size: 3.5vw;
+    }
+}
