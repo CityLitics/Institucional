@@ -7,6 +7,8 @@
 html,
 body {
     height: 100%;
+         background: radial-gradient(#65b5fb 1%, #c9dff2 49%, #ffffff 96%);
+
 }
 
 body {
@@ -83,7 +85,6 @@ main {
   
 }
 .section-contato {
-     background: radial-gradient(#65b5fb 1%, #c9dff2 49%, #ffffff 96%);
     display: flex;
     width: 100%;
     justify-content: center;
